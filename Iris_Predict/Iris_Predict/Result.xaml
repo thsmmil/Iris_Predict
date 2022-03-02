@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Iris_Predict.Result">
+    <ContentPage.Content>
+        <StackLayout 
+            Padding="15" 
+            VerticalOptions="Start" 
+            HorizontalOptions="FillAndExpand"
+            >
+            <Frame BackgroundColor="Purple" Padding="24" CornerRadius="10">
+                <Label Text="Resultado!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label 
+                Padding="10"
+                Text="De acordo com as medidas fornecidas é uma Iris :"
+                HorizontalTextAlignment="Start" 
+                TextColor="White" FontSize="14"
+                />
+            <Label
+                Padding="10"
+                Text="{Binding results}"
+                HorizontalTextAlignment="Start" 
+                TextColor="White" FontSize="14"
+                />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
