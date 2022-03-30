@@ -24,20 +24,10 @@ namespace Iris_Predict
                 double.Parse(sepalWidth.Text),
                 double.Parse(petalLength.Text),
                 double.Parse(petalWidth.Text)};
-            await Navigation.PushAsync(new Result() { });
+            await Navigation.PushAsync(new Result(medidas) { });
 
 
         }
 
-
-        private void entry_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-            if (!double.TryParse(e.NewTextValue, out double value))
-            {
-                ErrorLabel_1.Text = "Campos só aceitam números Ex: 5.1";
-                ((Entry)sender).Text = e.OldTextValue;
-            }
-        }
     }
 }

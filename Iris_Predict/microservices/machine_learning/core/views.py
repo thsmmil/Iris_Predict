@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import cross_val_predict
 
-from machine_learning.core.serializers import MeasuresSerializer, PredictionSerializer
+from .serializers import MeasuresSerializer, PredictionSerializer
 from .models import PredictionResult
 
 # Create your views here.

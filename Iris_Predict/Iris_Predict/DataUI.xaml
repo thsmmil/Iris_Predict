@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Iris_Predict.DataUI"
              >
-    <ContentPage.Content>
+    <ScrollView>
         <StackLayout Padding="40" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
             <Frame BackgroundColor="Purple" Padding="24" CornerRadius="40">
                 <Label Text="Bem-vindo ao PredictIris!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
@@ -14,27 +14,21 @@
                 Placeholder="Comprimento da Sépala(cm)"
                 TextColor="White"
                 PlaceholderColor="Gray"
-                TextChanged="entry_TextChanged"
                 />
-            <Label x:Name="ErrorLabel_1"/>
             <Entry
                 x:Name="sepalWidth"
                 Keyboard="Numeric"
                 Placeholder="Largura da Sépala(cm)"
                 TextColor="White"
                 PlaceholderColor="Gray"
-                TextChanged="entry_TextChanged"
                 />
-            <Label x:Name="ErrorLabel_2"/>
             <Entry 
                 x:Name="petalLength"
                 Keyboard="Numeric"
                 Placeholder="Comprimento da Pétala(cm)"
                 TextColor="White"
                 PlaceholderColor="Gray"
-                TextChanged="entry_TextChanged"
                 />
-            <Label x:Name="ErrorLabel_3"/>
             <Entry 
                 x:Name="petalWidth" 
                 Keyboard="Numeric" 
@@ -43,7 +37,6 @@
                 PlaceholderColor="Gray"
                 TextChanged="entry_TextChanged"
                 />
-            <Label x:Name="ErrorLabel_4"/>
             <Button
                 VerticalOptions="Center"
                 Text="Enviar"
@@ -53,5 +46,5 @@
                 Clicked="Button_Clicked"
                 CornerRadius="50"></Button>
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
 </ContentPage>

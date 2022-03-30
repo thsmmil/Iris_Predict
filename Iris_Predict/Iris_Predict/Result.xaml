@@ -19,10 +19,20 @@
                 />
             <Label
                 Padding="10"
-                Text="{Binding results}"
-                HorizontalTextAlignment="Start" 
-                TextColor="White" FontSize="14"
+                Text="Versicolor"
+                HorizontalTextAlignment="Center" 
+                TextColor="White" FontSize="20"
                 />
+            <Frame 
+                BackgroundColor="Transparent"
+                Padding="0"
+                CornerRadius="100">
+                <Image 
+                 WidthRequest="300"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    Source="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Iris_versicolor_4.jpg/1200px-Iris_versicolor_4.jpg"/>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
